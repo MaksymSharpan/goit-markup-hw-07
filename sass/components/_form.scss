@@ -85,22 +85,54 @@
 .form-input:focus + .icon-form {
 	fill: $accent-color;
 }
-// .form-input:hover,
-// .form-input:focus {
-// 	outline-color: $accent-color;
-// }
-
 .form-input:focus-within .icon-form,
 .form-input:focus {
 	fill: $accent-color;
 	border-color: $accent-color;
 	outline: none;
 }
-// .form-input:hover {
-// 	border-color: $accent-color;
+
+// .form-input:hover,
+// .form-input:focus {
+// 	outline-color: $accent-color;
 // }
-// .form-input:hover .icon-form,
-// .form-input:hover {
-// 	fill: $accent-color;
-// 	border-color: $accent-color;
-// }
+
+// CHECKBOX
+
+.checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	position: absolute;
+}
+.container-checkbox {
+	display: flex;
+	margin-bottom: 30px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.checkbox-icon {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	background-image: url(/images/icon-2/icon-check.svg);
+	background-color: #ffffff;
+	border: 1px solid $primary-text-color;
+	border-radius: 2px;
+	margin-right: 7px;
+	align-items: center;
+	vertical-align: text-top;
+}
+.checkbox:checked + .checkbox-icon {
+	background-color: $accent-color;
+	border: none;
+}
+.checkbox-label {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: $secondary-text-color;
+}

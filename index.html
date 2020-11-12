@@ -421,7 +421,6 @@
 		<!-- MODALKA -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<!-- <div class="button-posicion"> -->
 				<button class="button-close" data-modal-close>
 					<svg class="icon-close" width="18px" height="18px">
 						<use href="./images/icon-2/sprite.svg#icon-close"></use>
@@ -467,18 +466,24 @@
 						<textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-input"></textarea>
 					</div>
 
-					<div class="">
-						<label hidden for="policy">Условия договора</label>
-						<input hidden type="checkbox" name="policy" id="policy" />
+					<!-- <div class="check-container"> -->
+					<!-- <svg class="icon-form" width="16px" height="15px">
+							<use href="./images/icon-2/icon-check.svg"></use>
+						</svg> -->
+					<div class="container-checkbox">
+						<label class="checkbox-label">
+							<input class="checkbox" type="checkbox" name="policy" /><span class="checkbox-icon"> </span> Соглашаюсь с
+							рассылкой и принимаю Условия договора
+						</label>
 					</div>
 
-					<div>
-						<p class="policy">Соглашаюсь с рассылкой и принимаю <span class="policy-item">Условия договора</span></p>
-					</div>
+					<!-- </div> -->
+
+					<!-- <p class="policy">Соглашаюсь с рассылкой и принимаю <span class="policy-item">Условия договора</span></p> -->
+
 					<div class="btn-center"><button class="button-hero" type="submit">Отправить</button></div>
 				</form>
 			</div>
-			<!-- </div> -->
 		</div>
 		<script src="./modal.js"></script>
 		<script>
